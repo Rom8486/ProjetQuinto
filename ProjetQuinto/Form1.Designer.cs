@@ -1,6 +1,6 @@
 ﻿namespace ProjetQuinto
 {
-    partial class Form1
+    partial class MdiMère
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -29,102 +29,146 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnNouvellePartie = new System.Windows.Forms.ToolStripMenuItem();
             this.nouvellePartieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.thèmeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fondDecran1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fondDecran2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fondDecran3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.règlesDuJeuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.topScoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnQuitter = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnOptions = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnThemes = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnFondEcranOcean = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnFondEcranNatureSauvage = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnFondEcranCasino = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnReglesJeu = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnTopScores = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnFondEcranQuinto = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnFondEcranClassique = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.optionsToolStripMenuItem,
-            this.règlesDuJeuToolStripMenuItem,
-            this.topScoresToolStripMenuItem});
+            this.btnNouvellePartie,
+            this.btnOptions,
+            this.btnReglesJeu,
+            this.btnTopScores});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // toolStripMenuItem1
+            // btnNouvellePartie
             // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnNouvellePartie.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nouvellePartieToolStripMenuItem,
-            this.quitterToolStripMenuItem});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(54, 20);
-            this.toolStripMenuItem1.Text = "Fichier";
+            this.toolStripSeparator1,
+            this.btnQuitter});
+            this.btnNouvellePartie.Name = "btnNouvellePartie";
+            this.btnNouvellePartie.Size = new System.Drawing.Size(54, 20);
+            this.btnNouvellePartie.Text = "Fichier";
             // 
             // nouvellePartieToolStripMenuItem
             // 
             this.nouvellePartieToolStripMenuItem.Name = "nouvellePartieToolStripMenuItem";
-            this.nouvellePartieToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nouvellePartieToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
+            this.nouvellePartieToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.nouvellePartieToolStripMenuItem.Text = "Nouvelle Partie";
+            this.nouvellePartieToolStripMenuItem.Click += new System.EventHandler(this.nouvellePartieToolStripMenuItem_Click);
             // 
-            // quitterToolStripMenuItem
+            // toolStripSeparator1
             // 
-            this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.quitterToolStripMenuItem.Text = "Quitter";
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(194, 6);
             // 
-            // optionsToolStripMenuItem
+            // btnQuitter
             // 
-            this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.thèmeToolStripMenuItem});
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.optionsToolStripMenuItem.Text = "Options";
+            this.btnQuitter.Name = "btnQuitter";
+            this.btnQuitter.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
+            this.btnQuitter.Size = new System.Drawing.Size(197, 22);
+            this.btnQuitter.Text = "Quitter";
+            this.btnQuitter.Click += new System.EventHandler(this.btnQuitter_Click);
             // 
-            // thèmeToolStripMenuItem
+            // btnOptions
             // 
-            this.thèmeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fondDecran1ToolStripMenuItem,
-            this.fondDecran2ToolStripMenuItem,
-            this.fondDecran3ToolStripMenuItem});
-            this.thèmeToolStripMenuItem.Name = "thèmeToolStripMenuItem";
-            this.thèmeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.thèmeToolStripMenuItem.Text = "Thème";
+            this.btnOptions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnThemes});
+            this.btnOptions.Name = "btnOptions";
+            this.btnOptions.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
+            this.btnOptions.Size = new System.Drawing.Size(61, 20);
+            this.btnOptions.Text = "Options";
             // 
-            // fondDecran1ToolStripMenuItem
+            // btnThemes
             // 
-            this.fondDecran1ToolStripMenuItem.Name = "fondDecran1ToolStripMenuItem";
-            this.fondDecran1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fondDecran1ToolStripMenuItem.Text = "Fond d\'ecran 1";
+            this.btnThemes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnFondEcranOcean,
+            this.btnFondEcranNatureSauvage,
+            this.btnFondEcranCasino,
+            this.btnFondEcranQuinto,
+            this.btnFondEcranClassique});
+            this.btnThemes.Name = "btnThemes";
+            this.btnThemes.Size = new System.Drawing.Size(180, 22);
+            this.btnThemes.Text = "Thèmes";
             // 
-            // fondDecran2ToolStripMenuItem
+            // btnFondEcranOcean
             // 
-            this.fondDecran2ToolStripMenuItem.Name = "fondDecran2ToolStripMenuItem";
-            this.fondDecran2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fondDecran2ToolStripMenuItem.Text = "Fond d\'ecran 2";
+            this.btnFondEcranOcean.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnFondEcranOcean.CheckOnClick = true;
+            this.btnFondEcranOcean.Name = "btnFondEcranOcean";
+            this.btnFondEcranOcean.Size = new System.Drawing.Size(180, 22);
+            this.btnFondEcranOcean.Text = "Océan";
+            this.btnFondEcranOcean.Click += new System.EventHandler(this.bntFondEcranOcean_Click);
             // 
-            // fondDecran3ToolStripMenuItem
+            // btnFondEcranNatureSauvage
             // 
-            this.fondDecran3ToolStripMenuItem.Name = "fondDecran3ToolStripMenuItem";
-            this.fondDecran3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fondDecran3ToolStripMenuItem.Text = "Fond d\'ecran 3";
+            this.btnFondEcranNatureSauvage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnFondEcranNatureSauvage.CheckOnClick = true;
+            this.btnFondEcranNatureSauvage.Name = "btnFondEcranNatureSauvage";
+            this.btnFondEcranNatureSauvage.Size = new System.Drawing.Size(180, 22);
+            this.btnFondEcranNatureSauvage.Text = "Nature Sauvage";
+            this.btnFondEcranNatureSauvage.Click += new System.EventHandler(this.btnFondEcranNatureSauvage_Click);
             // 
-            // règlesDuJeuToolStripMenuItem
+            // btnFondEcranCasino
             // 
-            this.règlesDuJeuToolStripMenuItem.Name = "règlesDuJeuToolStripMenuItem";
-            this.règlesDuJeuToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
-            this.règlesDuJeuToolStripMenuItem.Text = "Règles du jeu";
+            this.btnFondEcranCasino.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnFondEcranCasino.CheckOnClick = true;
+            this.btnFondEcranCasino.Name = "btnFondEcranCasino";
+            this.btnFondEcranCasino.Size = new System.Drawing.Size(180, 22);
+            this.btnFondEcranCasino.Text = "Casino";
+            this.btnFondEcranCasino.Click += new System.EventHandler(this.btnFondEcranCasino_Click);
             // 
-            // topScoresToolStripMenuItem
+            // btnReglesJeu
             // 
-            this.topScoresToolStripMenuItem.Name = "topScoresToolStripMenuItem";
-            this.topScoresToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
-            this.topScoresToolStripMenuItem.Text = "Top Scores";
+            this.btnReglesJeu.Name = "btnReglesJeu";
+            this.btnReglesJeu.ShortcutKeys = System.Windows.Forms.Keys.F1;
+            this.btnReglesJeu.Size = new System.Drawing.Size(89, 20);
+            this.btnReglesJeu.Text = "Règles du jeu";
+            this.btnReglesJeu.Click += new System.EventHandler(this.btnReglesJeu_Click);
             // 
-            // Form1
+            // btnTopScores
+            // 
+            this.btnTopScores.Name = "btnTopScores";
+            this.btnTopScores.Size = new System.Drawing.Size(76, 20);
+            this.btnTopScores.Text = "Top Scores";
+            // 
+            // btnFondEcranQuinto
+            // 
+            this.btnFondEcranQuinto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnFondEcranQuinto.CheckOnClick = true;
+            this.btnFondEcranQuinto.Name = "btnFondEcranQuinto";
+            this.btnFondEcranQuinto.Size = new System.Drawing.Size(180, 22);
+            this.btnFondEcranQuinto.Text = "Quinto";
+            this.btnFondEcranQuinto.Click += new System.EventHandler(this.btnFondEcranQuinto_Click);
+            // 
+            // btnFondEcranClassique
+            // 
+            this.btnFondEcranClassique.CheckOnClick = true;
+            this.btnFondEcranClassique.Name = "btnFondEcranClassique";
+            this.btnFondEcranClassique.Size = new System.Drawing.Size(180, 22);
+            this.btnFondEcranClassique.Text = "Classique";
+            this.btnFondEcranClassique.Click += new System.EventHandler(this.btnFondEcranClassique_Click);
+            // 
+            // MdiMère
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +176,7 @@
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "MdiMère";
             this.Text = "Form1";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -144,16 +188,19 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem btnNouvellePartie;
         private System.Windows.Forms.ToolStripMenuItem nouvellePartieToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem quitterToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem thèmeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fondDecran1ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fondDecran2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fondDecran3ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem règlesDuJeuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem topScoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btnQuitter;
+        private System.Windows.Forms.ToolStripMenuItem btnOptions;
+        private System.Windows.Forms.ToolStripMenuItem btnThemes;
+        private System.Windows.Forms.ToolStripMenuItem btnFondEcranOcean;
+        private System.Windows.Forms.ToolStripMenuItem btnFondEcranNatureSauvage;
+        private System.Windows.Forms.ToolStripMenuItem btnFondEcranCasino;
+        private System.Windows.Forms.ToolStripMenuItem btnReglesJeu;
+        private System.Windows.Forms.ToolStripMenuItem btnTopScores;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem btnFondEcranQuinto;
+        private System.Windows.Forms.ToolStripMenuItem btnFondEcranClassique;
     }
 }
 

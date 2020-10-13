@@ -31,17 +31,17 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Difficulté = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.Information = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -72,10 +72,34 @@
             this.Difficulté.Controls.Add(this.radioButton1);
             this.Difficulté.Location = new System.Drawing.Point(12, 12);
             this.Difficulté.Name = "Difficulté";
-            this.Difficulté.Size = new System.Drawing.Size(75, 112);
+            this.Difficulté.Size = new System.Drawing.Size(178, 112);
             this.Difficulté.TabIndex = 2;
             this.Difficulté.TabStop = false;
             this.Difficulté.Text = "Niveau de difficulté:";
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(5, 78);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(55, 17);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Expert";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(5, 55);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(59, 17);
+            this.radioButton2.TabIndex = 1;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "Difficile";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -87,28 +111,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Facile";
             this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(5, 55);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(58, 17);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Normal";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(5, 78);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(59, 17);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Difficile";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // button1
             // 
@@ -135,37 +138,12 @@
             this.Information.TabStop = false;
             this.Information.Text = "Information";
             // 
-            // label1
+            // textBox4
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(104, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Manches";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(17, 25);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(24, 20);
-            this.textBox2.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(47, 25);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(21, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "/";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(62, 25);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(21, 20);
-            this.textBox3.TabIndex = 3;
+            this.textBox4.Location = new System.Drawing.Point(83, 60);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(56, 20);
+            this.textBox4.TabIndex = 5;
             // 
             // label3
             // 
@@ -176,12 +154,37 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Score: ";
             // 
-            // textBox4
+            // textBox3
             // 
-            this.textBox4.Location = new System.Drawing.Point(83, 60);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(56, 20);
-            this.textBox4.TabIndex = 5;
+            this.textBox3.Location = new System.Drawing.Point(62, 25);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(21, 20);
+            this.textBox3.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(47, 25);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(21, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "/";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(17, 25);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(24, 20);
+            this.textBox2.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(104, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Manches";
             // 
             // label4
             // 
@@ -222,6 +225,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 624);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label5);
@@ -234,6 +238,8 @@
             this.Controls.Add(this.panel1);
             this.Name = "Interface_jeux";
             this.Text = "Interface_jeux";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Interface_jeux_FormClosed);
+            this.Load += new System.EventHandler(this.Interface_jeux_Load);
             this.Difficulté.ResumeLayout(false);
             this.Difficulté.PerformLayout();
             this.Information.ResumeLayout(false);
