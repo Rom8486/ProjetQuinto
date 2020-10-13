@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 //using System.Threading;
 using System.Diagnostics;
+using System.IO;
 //using System.Threading;
 
 
@@ -30,6 +31,25 @@ namespace ProjetQuinto
             //Penser à stopper timer à la fin de la manche
 
         }
+        public void LoadTexte()
+        {
+            string path = @"c:\Windows\temp\Lexique.txt";
+            using (StreamReader sr = File.OpenText(path))
+            {
+                string s = "";
+                while ((s = sr.ReadLine()) != null)
+                {
+                    string[] result = s.Split(';');
+                    for (int i = 0; i < result.Length; i++)
+                    {
+                        TbMotADeviner.Text += result[i];
+                    }
+
+
+                }
+
+            }
+        }
         public Interface_jeux()
         {
             InitializeComponent();
@@ -48,7 +68,7 @@ namespace ProjetQuinto
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-
+            LoadTexte();
             CreationTimer();
 
 
