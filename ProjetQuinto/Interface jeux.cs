@@ -56,7 +56,6 @@ namespace ProjetQuinto
         }
         private void timer_Tick(object sender, EventArgs e)
         {
-            
             duree++;
             tbTimer.Text = duree.ToString();
             
