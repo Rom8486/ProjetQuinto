@@ -16,5 +16,12 @@ namespace ProjetQuinto
         {
             InitializeComponent();
         }
+
+        private void nouvellePartieToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Interface_jeux interface_jeux = new Interface_jeux();
+            interface_jeux.MdiParent = this;
+            interface_jeux.Show();
+        }
     }
 }
