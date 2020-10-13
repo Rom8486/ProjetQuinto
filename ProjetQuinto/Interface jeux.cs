@@ -17,6 +17,23 @@ namespace ProjetQuinto
 {
     public partial class Interface_jeux : Form
     {
+       
+        #region Singleton
+        private static Interface_jeux _instance;
+        public static Interface_jeux GetInstance()
+        {
+            if (_instance == null)
+            {
+                _instance = new Interface_jeux();
+            }
+            return _instance;
+        }
+        private void Interface_jeux_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            _instance = null;
+        }
+        #endregion
+
         int duree = 0;
         /// <summary>
         /// Fonctions
@@ -76,7 +93,6 @@ namespace ProjetQuinto
         }
         private void timer_Tick(object sender, EventArgs e)
         {
-            
             duree++;
             tbTimer.Text = duree.ToString();
             
@@ -84,5 +100,38 @@ namespace ProjetQuinto
 
 
 
+
+        private void Interface_jeux_Load(object sender, EventArgs e)
+        {
+            //this.BackgroundImage = BackgroundImage.
+        }
+
+
+
+        #region Radio Button
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+
+            }
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton2.Checked)
+            {
+
+            }
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton3.Checked)
+            {
+
+            }
+        }
+        #endregion
     }
 }

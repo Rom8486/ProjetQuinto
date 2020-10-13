@@ -387,7 +387,7 @@
             this.Difficulté.Controls.Add(this.radioButton1);
             this.Difficulté.Location = new System.Drawing.Point(12, 12);
             this.Difficulté.Name = "Difficulté";
-            this.Difficulté.Size = new System.Drawing.Size(75, 112);
+            this.Difficulté.Size = new System.Drawing.Size(178, 112);
             this.Difficulté.TabIndex = 2;
             this.Difficulté.TabStop = false;
             this.Difficulté.Text = "Niveau de difficulté:";
@@ -397,22 +397,24 @@
             this.radioButton3.AutoSize = true;
             this.radioButton3.Location = new System.Drawing.Point(5, 78);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(59, 17);
+            this.radioButton3.Size = new System.Drawing.Size(55, 17);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Difficile";
+            this.radioButton3.Text = "Expert";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(5, 55);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(58, 17);
+            this.radioButton2.Size = new System.Drawing.Size(59, 17);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Normal";
+            this.radioButton2.Text = "Difficile";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -424,6 +426,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Facile";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // btnStart
             // 
@@ -540,6 +543,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 624);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label5);
@@ -552,7 +556,8 @@
             this.Controls.Add(this.panel1);
             this.Name = "Interface_jeux";
             this.Text = "Interface_jeux";
-            this.panel1.ResumeLayout(false);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Interface_jeux_FormClosed);
+            this.Load += new System.EventHandler(this.Interface_jeux_Load);
             this.Difficulté.ResumeLayout(false);
             this.Difficulté.PerformLayout();
             this.Information.ResumeLayout(false);

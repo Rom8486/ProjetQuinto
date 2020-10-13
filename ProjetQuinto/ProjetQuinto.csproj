@@ -53,13 +53,13 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gestion_du_temps.cs" />
     <Compile Include="Interface jeux.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interface jeux.Designer.cs">
       <DependentUpon>Interface jeux.cs</DependentUpon>
     </Compile>
+    <Compile Include="Joueur.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
