@@ -42,7 +42,6 @@
             this.btnFondEcranClassique = new System.Windows.Forms.ToolStripMenuItem();
             this.btnReglesJeu = new System.Windows.Forms.ToolStripMenuItem();
             this.btnTopScores = new System.Windows.Forms.ToolStripMenuItem();
-            this.lexiqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,8 +51,7 @@
             this.btnNouvellePartie,
             this.btnOptions,
             this.btnReglesJeu,
-            this.btnTopScores,
-            this.lexiqueToolStripMenuItem});
+            this.btnTopScores});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -139,26 +137,8 @@
             this.btnFondEcranCasino.Text = "Casino";
             this.btnFondEcranCasino.Click += new System.EventHandler(this.btnFondEcranCasino_Click);
             // 
-            // btnReglesJeu
-            // 
-            this.btnReglesJeu.Name = "btnReglesJeu";
-            this.btnReglesJeu.ShortcutKeys = System.Windows.Forms.Keys.F1;
-            this.btnReglesJeu.Size = new System.Drawing.Size(89, 20);
-            this.btnReglesJeu.Text = "Règles du jeu";
-            this.btnReglesJeu.Click += new System.EventHandler(this.btnReglesJeu_Click);
-            // 
-            // btnTopScores
-            // 
-            this.btnTopScores.Name = "btnTopScores";
-            this.btnTopScores.Size = new System.Drawing.Size(76, 20);
-            this.btnTopScores.Text = "Top Scores";
-            // 
             // btnFondEcranQuinto
             // 
-            this.lexiqueToolStripMenuItem.Name = "lexiqueToolStripMenuItem";
-            this.lexiqueToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.lexiqueToolStripMenuItem.Text = "Lexique";
-            this.lexiqueToolStripMenuItem.Click += new System.EventHandler(this.lexiqueToolStripMenuItem_Click);
             this.btnFondEcranQuinto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnFondEcranQuinto.CheckOnClick = true;
             this.btnFondEcranQuinto.Name = "btnFondEcranQuinto";
@@ -225,7 +205,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem btnFondEcranQuinto;
         private System.Windows.Forms.ToolStripMenuItem btnFondEcranClassique;
-        private System.Windows.Forms.ToolStripMenuItem lexiqueToolStripMenuItem;
     }
 }
 
