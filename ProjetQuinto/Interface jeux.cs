@@ -11,14 +11,14 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using System.IO;
 using Newtonsoft.Json;
-//using System.Threading;
-
+using System.Threading;
+using Timer = System.Windows.Forms.Timer;
 
 namespace ProjetQuinto
 {
     public partial class Interface_jeux : Form
     {
-       
+
         #region Singleton
         private static Interface_jeux _instance;
         public static Interface_jeux GetInstance()
@@ -49,7 +49,7 @@ namespace ProjetQuinto
             //Penser à stopper timer à la fin de la manche
 
         }
-      
+
         //public void LoadTexte()
         //{
         //    string path = @"c:\Windows\temp\Lexique.txt";
@@ -65,10 +65,10 @@ namespace ProjetQuinto
         //            }
 
 
-        //        }
+        //            //        }
 
-        //    }
-        //}
+        //            //    }
+        //            //}
 
 
         public Interface_jeux()
@@ -84,12 +84,12 @@ namespace ProjetQuinto
 
         private void TbMotADeviner_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-           // LoadTexte();
+            // LoadTexte();
             CreationTimer();
 
 
@@ -99,7 +99,7 @@ namespace ProjetQuinto
         {
             duree++;
             tbTimer.Text = duree.ToString();
-            
+
         }
 
 

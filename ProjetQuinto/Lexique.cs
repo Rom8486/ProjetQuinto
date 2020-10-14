@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace ProjetQuinto
 {
     public partial class Lexique : Form
@@ -35,7 +36,7 @@ namespace ProjetQuinto
         private void btnValider_Click(object sender, EventArgs e)
         {
             string saisie = tbMot.Text;
-            SaveJson(tbMot.Text);
+         SaveJson(tbMot.Text);
             
             
         }

@@ -25,6 +25,6 @@ namespace ProjetQuinto
                 sr.Close();
                 this.Add(obj);
             }
-        
+        }
     }
 }
