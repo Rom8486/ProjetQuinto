@@ -9,8 +9,7 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
-            LoadTexte();
-            Console.ReadLine();
+          
         }
         
 

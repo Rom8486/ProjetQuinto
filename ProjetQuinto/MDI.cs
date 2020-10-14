@@ -114,9 +114,15 @@ namespace ProjetQuinto
 
 
 
+
         #endregion
 
-
+        private void lexiqueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Lexique lexique = Lexique.GetInstance();
+            lexique.MdiParent = this;
+            lexique.Show();
+        }
     }
 
 }
