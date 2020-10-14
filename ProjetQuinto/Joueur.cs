@@ -45,10 +45,10 @@ namespace ProjetQuinto
             set { _alias = value; }
         }
 
-        private int CalculNbPoints(TimeSpan tps, int NbErreurs,  )
-        {
+        //private int CalculNbPoints(TimeSpan tps, int NbErreurs,  )
+        //{
 
-        }
+        //}
 
 
 

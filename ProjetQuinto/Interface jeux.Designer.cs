@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlClavierNumerique = new System.Windows.Forms.Panel();
             this.btnN = new System.Windows.Forms.Button();
             this.btnB = new System.Windows.Forms.Button();
             this.btnV = new System.Windows.Forms.Button();
@@ -55,13 +55,13 @@
             this.btnE = new System.Windows.Forms.Button();
             this.btnZ = new System.Windows.Forms.Button();
             this.btnA = new System.Windows.Forms.Button();
-            this.TbMotADeviner = new System.Windows.Forms.TextBox();
-            this.Difficulté = new System.Windows.Forms.GroupBox();
+            this.tbMotADeviner = new System.Windows.Forms.TextBox();
+            this.gbDifficulté = new System.Windows.Forms.GroupBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.btnStart = new System.Windows.Forms.Button();
-            this.Information = new System.Windows.Forms.GroupBox();
+            this.gbInformation = new System.Windows.Forms.GroupBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -70,46 +70,50 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tbTimer = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
-            this.Difficulté.SuspendLayout();
-            this.Information.SuspendLayout();
+            this.lbTimer = new System.Windows.Forms.Label();
+            this.tbNbreEssais = new System.Windows.Forms.TextBox();
+            this.pnlClavierNumerique.SuspendLayout();
+            this.gbDifficulté.SuspendLayout();
+            this.gbInformation.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlClavierNumerique
             // 
-            this.panel1.Controls.Add(this.btnN);
-            this.panel1.Controls.Add(this.btnB);
-            this.panel1.Controls.Add(this.btnV);
-            this.panel1.Controls.Add(this.btnC);
-            this.panel1.Controls.Add(this.btnX);
-            this.panel1.Controls.Add(this.btnW);
-            this.panel1.Controls.Add(this.btnM);
-            this.panel1.Controls.Add(this.btnL);
-            this.panel1.Controls.Add(this.btnK);
-            this.panel1.Controls.Add(this.btnJ);
-            this.panel1.Controls.Add(this.btnH);
-            this.panel1.Controls.Add(this.btnG);
-            this.panel1.Controls.Add(this.btnF);
-            this.panel1.Controls.Add(this.btnD);
-            this.panel1.Controls.Add(this.btnS);
-            this.panel1.Controls.Add(this.btnQ);
-            this.panel1.Controls.Add(this.btnP);
-            this.panel1.Controls.Add(this.btnO);
-            this.panel1.Controls.Add(this.btnI);
-            this.panel1.Controls.Add(this.btnU);
-            this.panel1.Controls.Add(this.btnY);
-            this.panel1.Controls.Add(this.btnT);
-            this.panel1.Controls.Add(this.btnR);
-            this.panel1.Controls.Add(this.btnE);
-            this.panel1.Controls.Add(this.btnZ);
-            this.panel1.Controls.Add(this.btnA);
-            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(78, 403);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(615, 185);
-            this.panel1.TabIndex = 0;
+            this.pnlClavierNumerique.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlClavierNumerique.BackColor = System.Drawing.Color.Transparent;
+            this.pnlClavierNumerique.Controls.Add(this.btnN);
+            this.pnlClavierNumerique.Controls.Add(this.btnB);
+            this.pnlClavierNumerique.Controls.Add(this.btnV);
+            this.pnlClavierNumerique.Controls.Add(this.btnC);
+            this.pnlClavierNumerique.Controls.Add(this.btnX);
+            this.pnlClavierNumerique.Controls.Add(this.btnW);
+            this.pnlClavierNumerique.Controls.Add(this.btnM);
+            this.pnlClavierNumerique.Controls.Add(this.btnL);
+            this.pnlClavierNumerique.Controls.Add(this.btnK);
+            this.pnlClavierNumerique.Controls.Add(this.btnJ);
+            this.pnlClavierNumerique.Controls.Add(this.btnH);
+            this.pnlClavierNumerique.Controls.Add(this.btnG);
+            this.pnlClavierNumerique.Controls.Add(this.btnF);
+            this.pnlClavierNumerique.Controls.Add(this.btnD);
+            this.pnlClavierNumerique.Controls.Add(this.btnS);
+            this.pnlClavierNumerique.Controls.Add(this.btnQ);
+            this.pnlClavierNumerique.Controls.Add(this.btnP);
+            this.pnlClavierNumerique.Controls.Add(this.btnO);
+            this.pnlClavierNumerique.Controls.Add(this.btnI);
+            this.pnlClavierNumerique.Controls.Add(this.btnU);
+            this.pnlClavierNumerique.Controls.Add(this.btnY);
+            this.pnlClavierNumerique.Controls.Add(this.btnT);
+            this.pnlClavierNumerique.Controls.Add(this.btnR);
+            this.pnlClavierNumerique.Controls.Add(this.btnE);
+            this.pnlClavierNumerique.Controls.Add(this.btnZ);
+            this.pnlClavierNumerique.Controls.Add(this.btnA);
+            this.pnlClavierNumerique.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlClavierNumerique.Location = new System.Drawing.Point(78, 403);
+            this.pnlClavierNumerique.Name = "pnlClavierNumerique";
+            this.pnlClavierNumerique.Size = new System.Drawing.Size(615, 185);
+            this.pnlClavierNumerique.TabIndex = 2;
             // 
             // btnN
             // 
@@ -371,33 +375,43 @@
             this.btnA.UseVisualStyleBackColor = true;
             this.btnA.Click += new System.EventHandler(this.btnA_Click);
             // 
-            // TbMotADeviner
+            // tbMotADeviner
             // 
-            this.TbMotADeviner.Location = new System.Drawing.Point(58, 295);
-            this.TbMotADeviner.Multiline = true;
-            this.TbMotADeviner.Name = "TbMotADeviner";
-            this.TbMotADeviner.Size = new System.Drawing.Size(661, 68);
-            this.TbMotADeviner.TabIndex = 1;
-            this.TbMotADeviner.TextChanged += new System.EventHandler(this.TbMotADeviner_TextChanged);
+            this.tbMotADeviner.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbMotADeviner.Location = new System.Drawing.Point(58, 295);
+            this.tbMotADeviner.Multiline = true;
+            this.tbMotADeviner.Name = "tbMotADeviner";
+            this.tbMotADeviner.Size = new System.Drawing.Size(661, 68);
+            this.tbMotADeviner.TabIndex = 0;
             // 
-            // Difficulté
+            // gbDifficulté
             // 
-            this.Difficulté.Controls.Add(this.radioButton3);
-            this.Difficulté.Controls.Add(this.radioButton2);
-            this.Difficulté.Controls.Add(this.radioButton1);
-            this.Difficulté.Location = new System.Drawing.Point(12, 12);
-            this.Difficulté.Name = "Difficulté";
-            this.Difficulté.Size = new System.Drawing.Size(178, 112);
-            this.Difficulté.TabIndex = 2;
-            this.Difficulté.TabStop = false;
-            this.Difficulté.Text = "Niveau de difficulté:";
+            this.gbDifficulté.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gbDifficulté.BackColor = System.Drawing.Color.Transparent;
+            this.gbDifficulté.Controls.Add(this.radioButton3);
+            this.gbDifficulté.Controls.Add(this.radioButton2);
+            this.gbDifficulté.Controls.Add(this.radioButton1);
+            this.gbDifficulté.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbDifficulté.Location = new System.Drawing.Point(12, 12);
+            this.gbDifficulté.Name = "gbDifficulté";
+            this.gbDifficulté.Size = new System.Drawing.Size(189, 125);
+            this.gbDifficulté.TabIndex = 0;
+            this.gbDifficulté.TabStop = false;
+            this.gbDifficulté.Text = "Niveau de difficulté:";
             // 
             // radioButton3
             // 
+            this.radioButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(5, 78);
+            this.radioButton3.Location = new System.Drawing.Point(44, 76);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(55, 17);
+            this.radioButton3.Size = new System.Drawing.Size(70, 20);
             this.radioButton3.TabIndex = 2;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Expert";
@@ -406,10 +420,13 @@
             // 
             // radioButton2
             // 
+            this.radioButton2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(5, 55);
+            this.radioButton2.Location = new System.Drawing.Point(44, 55);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(59, 17);
+            this.radioButton2.Size = new System.Drawing.Size(78, 20);
             this.radioButton2.TabIndex = 1;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Difficile";
@@ -418,10 +435,13 @@
             // 
             // radioButton1
             // 
+            this.radioButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(5, 32);
+            this.radioButton1.Location = new System.Drawing.Point(44, 32);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(53, 17);
+            this.radioButton1.Size = new System.Drawing.Size(69, 20);
             this.radioButton1.TabIndex = 0;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Facile";
@@ -430,55 +450,75 @@
             // 
             // btnStart
             // 
-            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.Location = new System.Drawing.Point(304, 110);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(153, 51);
-            this.btnStart.TabIndex = 3;
+            this.btnStart.TabIndex = 1;
             this.btnStart.Text = "Commencer";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
-            // Information
+            // gbInformation
             // 
-            this.Information.Controls.Add(this.textBox4);
-            this.Information.Controls.Add(this.label3);
-            this.Information.Controls.Add(this.textBox3);
-            this.Information.Controls.Add(this.label2);
-            this.Information.Controls.Add(this.textBox2);
-            this.Information.Controls.Add(this.label1);
-            this.Information.Location = new System.Drawing.Point(580, 23);
-            this.Information.Name = "Information";
-            this.Information.Size = new System.Drawing.Size(171, 114);
-            this.Information.TabIndex = 4;
-            this.Information.TabStop = false;
-            this.Information.Text = "Information";
+            this.gbInformation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gbInformation.BackColor = System.Drawing.Color.Transparent;
+            this.gbInformation.Controls.Add(this.textBox4);
+            this.gbInformation.Controls.Add(this.label3);
+            this.gbInformation.Controls.Add(this.textBox3);
+            this.gbInformation.Controls.Add(this.label2);
+            this.gbInformation.Controls.Add(this.textBox2);
+            this.gbInformation.Controls.Add(this.label1);
+            this.gbInformation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbInformation.Location = new System.Drawing.Point(580, 23);
+            this.gbInformation.Name = "gbInformation";
+            this.gbInformation.Size = new System.Drawing.Size(193, 124);
+            this.gbInformation.TabIndex = 0;
+            this.gbInformation.TabStop = false;
+            this.gbInformation.Text = "Information";
             // 
             // textBox4
             // 
+            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox4.Location = new System.Drawing.Point(83, 60);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(56, 20);
-            this.textBox4.TabIndex = 5;
+            this.textBox4.Size = new System.Drawing.Size(56, 22);
+            this.textBox4.TabIndex = 0;
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(17, 67);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 4;
+            this.label3.Size = new System.Drawing.Size(57, 16);
+            this.label3.TabIndex = 0;
             this.label3.Text = "Score: ";
             // 
             // textBox3
             // 
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox3.Location = new System.Drawing.Point(62, 25);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(21, 20);
-            this.textBox3.TabIndex = 3;
+            this.textBox3.Size = new System.Drawing.Size(21, 22);
+            this.textBox3.TabIndex = 0;
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(47, 25);
             this.label2.Name = "label2";
@@ -488,56 +528,76 @@
             // 
             // textBox2
             // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox2.Location = new System.Drawing.Point(17, 25);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(24, 20);
-            this.textBox2.TabIndex = 1;
+            this.textBox2.Size = new System.Drawing.Size(24, 22);
+            this.textBox2.TabIndex = 0;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(104, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 13);
+            this.label1.Size = new System.Drawing.Size(70, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manches";
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
             this.label4.Location = new System.Drawing.Point(125, 198);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 38);
-            this.label4.TabIndex = 5;
+            this.label4.TabIndex = 0;
             this.label4.Text = "Timer: ";
             // 
             // tbTimer
             // 
+            this.tbTimer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTimer.ForeColor = System.Drawing.Color.DarkRed;
             this.tbTimer.Location = new System.Drawing.Point(207, 198);
             this.tbTimer.Multiline = true;
             this.tbTimer.Name = "tbTimer";
             this.tbTimer.Size = new System.Drawing.Size(28, 28);
-            this.tbTimer.TabIndex = 6;
+            this.tbTimer.TabIndex = 0;
             // 
-            // label5
+            // lbTimer
             // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(397, 193);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(224, 37);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Nombre d\'essais restant:";
+            this.lbTimer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbTimer.BackColor = System.Drawing.Color.Transparent;
+            this.lbTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTimer.Location = new System.Drawing.Point(397, 193);
+            this.lbTimer.Name = "lbTimer";
+            this.lbTimer.Size = new System.Drawing.Size(224, 37);
+            this.lbTimer.TabIndex = 0;
+            this.lbTimer.Text = "Nombre d\'essais restant:";
             // 
-            // textBox6
+            // tbNbreEssais
             // 
-            this.textBox6.Location = new System.Drawing.Point(649, 188);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(71, 42);
-            this.textBox6.TabIndex = 8;
+            this.tbNbreEssais.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbNbreEssais.Location = new System.Drawing.Point(648, 188);
+            this.tbNbreEssais.Multiline = true;
+            this.tbNbreEssais.Name = "tbNbreEssais";
+            this.tbNbreEssais.Size = new System.Drawing.Size(71, 42);
+            this.tbNbreEssais.TabIndex = 0;
             // 
             // Interface_jeux
             // 
@@ -545,23 +605,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 624);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.tbNbreEssais);
+            this.Controls.Add(this.lbTimer);
             this.Controls.Add(this.tbTimer);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.Information);
+            this.Controls.Add(this.gbInformation);
             this.Controls.Add(this.btnStart);
-            this.Controls.Add(this.Difficulté);
-            this.Controls.Add(this.TbMotADeviner);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.gbDifficulté);
+            this.Controls.Add(this.tbMotADeviner);
+            this.Controls.Add(this.pnlClavierNumerique);
             this.Name = "Interface_jeux";
-            this.Text = "Interface_jeux";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Interface_jeux_FormClosed);
             this.Load += new System.EventHandler(this.Interface_jeux_Load);
-            this.Difficulté.ResumeLayout(false);
-            this.Difficulté.PerformLayout();
-            this.Information.ResumeLayout(false);
-            this.Information.PerformLayout();
+            this.pnlClavierNumerique.ResumeLayout(false);
+            this.gbDifficulté.ResumeLayout(false);
+            this.gbDifficulté.PerformLayout();
+            this.gbInformation.ResumeLayout(false);
+            this.gbInformation.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -569,14 +629,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox TbMotADeviner;
-        private System.Windows.Forms.GroupBox Difficulté;
+        private System.Windows.Forms.Panel pnlClavierNumerique;
+        private System.Windows.Forms.TextBox tbMotADeviner;
+        private System.Windows.Forms.GroupBox gbDifficulté;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.GroupBox Information;
+        private System.Windows.Forms.GroupBox gbInformation;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox3;
@@ -585,8 +645,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox tbTimer;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label lbTimer;
+        private System.Windows.Forms.TextBox tbNbreEssais;
         private System.Windows.Forms.Button btnN;
         private System.Windows.Forms.Button btnB;
         private System.Windows.Forms.Button btnV;

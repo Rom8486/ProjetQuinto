@@ -25,6 +25,7 @@ namespace ProjetQuinto
             Interface_jeux interface_jeux = Interface_jeux.GetInstance();
             interface_jeux.MdiParent = this;
             interface_jeux.Show();
+
         }
 
         private void btnQuitter_Click(object sender, EventArgs e)
@@ -85,6 +86,7 @@ namespace ProjetQuinto
 
             Image monImage = new Bitmap(@"C:\Users\CDA\Desktop\Projet de groupe Quinto\Fonds écran\Quinto.jpg");
             this.BackgroundImage = monImage;
+           
         }
         private void btnFondEcranClassique_Click(object sender, EventArgs e)
         {
@@ -96,7 +98,7 @@ namespace ProjetQuinto
                 btnFondEcranQuinto.Checked = false;
             }
 
-            this.BackColor = System.Drawing.Color.Empty;
+            this.BackColor = Color.RoyalBlue;
         }
         #endregion
 
@@ -105,17 +107,29 @@ namespace ProjetQuinto
         {
             DialogResult result = MessageBox.Show("                                                   Le Quinto\n" + 
                 "\nLe quinto est un jeu d'origine péruvienne qui se joue en 2 à 5 manches." +
-                "Le but du quinto est simple, il s'agit de découvrir les mots cachés." +
-                "Pour de plus amples informations, nous vous renvoyons" +
-                "sur le très complet article de Wikipédia que vous trouverez à l'adresse suivante:\n" +
-                "https://fr.wikipedia.org/wiki/Le_Pendu_(jeu)", 
+                " Le but du quinto est simple, il s'agit de découvrir les mots cachés." +
+                " Pour de plus amples informations, nous vous renvoyons" +
+                " sur le très complet article de Wikipédia que vous trouverez à l'adresse suivante:\n" +
+                "\nhttps://fr.wikipedia.org/wiki/Le_Pendu_(jeu)", 
                 "Règles du jeu", MessageBoxButtons.OK, MessageBoxIcon.None);
         }
 
 
 
+
         #endregion
 
+        private void MdiMère_ResizeEnd(object sender, EventArgs e)
+        {
+            Refresh();
+        }
+
+        private void btnTopScores_Click(object sender, EventArgs e)
+        {
+            TopScoresChart topScoresChart = TopScoresChart.GetInstance();
+            topScoresChart.MdiParent = this;
+            topScoresChart.Show();
+        }
 
     }
 
