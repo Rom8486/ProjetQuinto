@@ -42,7 +42,6 @@
             this.btnFondEcranClassique = new System.Windows.Forms.ToolStripMenuItem();
             this.btnReglesJeu = new System.Windows.Forms.ToolStripMenuItem();
             this.btnTopScores = new System.Windows.Forms.ToolStripMenuItem();
-            this.lexiqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,8 +51,7 @@
             this.btnNouvellePartie,
             this.btnOptions,
             this.btnReglesJeu,
-            this.btnTopScores,
-            this.lexiqueToolStripMenuItem});
+            this.btnTopScores});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -169,24 +167,21 @@
             this.btnTopScores.Name = "btnTopScores";
             this.btnTopScores.Size = new System.Drawing.Size(76, 20);
             this.btnTopScores.Text = "Top Scores";
-            // 
-            // lexiqueToolStripMenuItem
-            // 
-            this.lexiqueToolStripMenuItem.Name = "lexiqueToolStripMenuItem";
-            this.lexiqueToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.lexiqueToolStripMenuItem.Text = "Lexique";
-            this.lexiqueToolStripMenuItem.Click += new System.EventHandler(this.lexiqueToolStripMenuItem_Click);
+            this.btnTopScores.Click += new System.EventHandler(this.btnTopScores_Click);
             // 
             // MdiMère
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MdiMère";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.Text = "Form1";
+            this.ResizeEnd += new System.EventHandler(this.MdiMère_ResizeEnd);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -210,7 +205,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem btnFondEcranQuinto;
         private System.Windows.Forms.ToolStripMenuItem btnFondEcranClassique;
-        private System.Windows.Forms.ToolStripMenuItem lexiqueToolStripMenuItem;
     }
 }
 

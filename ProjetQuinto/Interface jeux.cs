@@ -39,6 +39,46 @@ namespace ProjetQuinto
         /// <summary>
         /// Fonctions
         /// </summary>
+      
+        enum Contextes
+        {
+            Initial = 0,
+            GameStarted = 1,
+            GameLost = 2
+        }
+
+        #region Gestionnaire de Contextes
+        void GestionnaireContextes(Contextes contexte)
+        {
+            switch (contexte)
+            {
+                case Contextes.Initial:
+                    gbDifficulté.Enabled = true;
+                    gbInformation.Enabled = false;
+                    btnStart.Enabled = false;
+                    tbTimer.Enabled = false;
+                    tbNbreEssais.Enabled = false;
+                    tbMotADeviner.Enabled = false;
+                    pnlClavierNumerique.Enabled = false;
+                    break;
+                case Contextes.GameStarted:
+                    gbDifficulté.Enabled = false;
+                    gbInformation.Enabled = true;
+                    btnStart.Enabled = false;
+                    tbTimer.Enabled = true;
+                    tbNbreEssais.Enabled = true;
+                    tbMotADeviner.Enabled = true;
+                    pnlClavierNumerique.Enabled = true;
+                    break;
+                case Contextes.GameLost:
+                    GestionnaireContextes(Contextes.Initial);
+                    break;
+                default:
+                    break;
+            }
+        }
+        #endregion
+
         public void CreationTimer()
         {
             Timer timer = new Timer();
@@ -74,6 +114,7 @@ namespace ProjetQuinto
         public Interface_jeux()
         {
             InitializeComponent();
+            GestionnaireContextes(Contextes.Initial);
         }
 
         private void btnA_Click(object sender, EventArgs e)
@@ -91,9 +132,7 @@ namespace ProjetQuinto
         {
             // LoadTexte();
             CreationTimer();
-
-
-
+            GestionnaireContextes(Contextes.GameStarted);
         }
         private void timer_Tick(object sender, EventArgs e)
         {
@@ -110,14 +149,12 @@ namespace ProjetQuinto
             //this.BackgroundImage = BackgroundImage.
         }
 
-
-
         #region Radio Button
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
             {
-
+              
             }
         }
 
@@ -137,5 +174,13 @@ namespace ProjetQuinto
             }
         }
         #endregion
+
+        private void Interface_jeux_Load(object sender, EventArgs e)
+        {
+            this.BackgroundImage = Parent.BackgroundImage;
+            this.Refresh();
+        }
+
+
     }
 }
